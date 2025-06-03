@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main() 
+
+{
+    char str[104];
+    char ch;
+    int i,found=0 ;
+
+    printf("Enter a String :");
+    scanf("%s",str);
+    
+    printf("Enter a Charector :");
+    scanf(" %c",&ch);
+    
+    for (i = 0; str[i] != '\0'; i++)
+    {
+        if (str[i]==ch){
+        found=1;
+        break;
+    }
+}
+    if(found==1)
+    
+    {
+        printf("%c is present...\n",ch);
+    }
+    else
+    {
+        printf("%c It's not present....\n",ch);
+    }
+    return 0;
+}
