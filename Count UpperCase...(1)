@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() 
+
+{
+    char str[104];
+    int i, count = 0;
+
+    printf("Enter a String :");
+    scanf("%s",str);
+    for (i = 0; str[i] != '\0'; i++)
+    {
+        if (str[i]>='A' && str[i]<='Z')
+            count++;
+    }
+    
+
+    printf("Number of Uppercase letters: %d\n", count);
+
+    return 0;
+}
