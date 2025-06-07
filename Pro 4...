@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    int n;
+    char str[100], temp[100];
+    scanf("%d", &n);
+    scanf("%[^\n]", str);
+    int len = strlen(str);
+    n = n % len; // Handle rotations larger than string length
+    for (int i = 0; i < len; i++) {
+        temp[(i + n) % len] = s[i];
+    }
+    temp(len) = '\0';
+    printf("%s\n", temp);
+    return 0;
+}
